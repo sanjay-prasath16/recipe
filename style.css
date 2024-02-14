@@ -153,14 +153,13 @@ nav a:hover,.active {
   outline: none;
 }
 .sort {
-    margin-top: -10px;
-    margin-bottom: 17px;
+    margin-top: 0px;
     border: 1px solid #EB4A36;
     background-color: #EB4A36;
     color: #fff;
     border-radius: 15px;
     width: 190px;
-    padding: 10px 0px 10px 10px;
+    padding: 5px 0px 5px 10px;
 }
 #sortDropdown {
     border: 1px solid #EB4A36;
@@ -184,7 +183,7 @@ nav a:hover,.active {
     border: none;
     margin: 0px 0px 15px 20px;
 }
-.recipe-l button:hover {
+.recipe-l button:hover,.recipe-l .active {
     color: #EB4A36;
 }
 .recipe-content img {
@@ -265,6 +264,7 @@ nav a:hover,.active {
 .video-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .video {
     position: relative;

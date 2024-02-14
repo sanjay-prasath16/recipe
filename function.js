@@ -521,3 +521,23 @@ videos.forEach(video => {
         }
     });
 });
+document.addEventListener('DOMContentLoaded', function() {
+  // Add click event listener to all containers with the class 'recipe-l'
+  var containers = document.querySelectorAll('.recipe-dish-list, .recipe-meal-list, .recipe-diet-list, .recipe-cusine-list, .recipe-seasonal-list');
+
+  containers.forEach(function(container) {
+      container.addEventListener('click', function(event) {
+          // Check if the clicked element is a button
+          if (event.target.tagName === 'BUTTON') {
+              // Remove active class from all buttons within the container
+              var buttons = container.querySelectorAll('button');
+              buttons.forEach(function(button) {
+                  button.classList.remove('active');
+              });
+
+              // Add active class to the clicked button
+              event.target.classList.add('active');
+          }
+      });
+  });
+});
