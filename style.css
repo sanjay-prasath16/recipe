@@ -37,7 +37,7 @@ nav a {
     color: #000;
     margin-left: 20px;
 }
-nav a:hover,.active {
+.offcanvas-body a:hover,.active {
     color: #EB4A36;
 }
 .search {
@@ -650,7 +650,7 @@ nav a:hover,.active {
     }
 }
 @media (min-width: 992px) and (max-width: 1920px) {
-    .md-up {
+    .sm {
         display: none;
     }
 }

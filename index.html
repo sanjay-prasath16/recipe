@@ -21,7 +21,10 @@
     <link rel="icon" type="image/x-icon" href="/images/logo.webp">
 </head>
 <body>
-    <div class="row">
+    <div class="div" id="home">
+        <img src="/images/add.webp" alt="" height="150" width="10" id="home" style="margin-top: -100px; opacity: 0;">
+    </div>
+    <div class="row sm">
         <div class="col-1">
             <h4 class="cook" style="margin-top: 20px;">Cook</h4>
         </div>
@@ -44,9 +47,9 @@
                 <div class="row" style="width: 100%;">
                     <div class="col" style="display: flex; flex-direction: row;">
                         <h4>Cook</h4>
-                        <a href="/index.html" class="active">Home</a>
-                        <a href="#recipes" class="rec">Recipes</a>
-                        <a href="#clips" class="cli">Clips</a>
+                        <a href="#home" class="home active" onclick="setActive('home')" style="margin: 8px 0px 0px 0px;">Home</a>
+                        <a href="#recipes" class="rec" onclick="setActive('recipes')">Recipes</a>
+                        <a href="#clips" class="cli" onclick="setActive('clips')" style="margin: 8px 0px 0px 8px;">Clips</a>
                     </div>
                     <div class="col" style="display: flex; flex-direction: row; justify-content: end;">
                       <img src="/images/search.webp" alt="ingredients" width="40" height="40" class="search" loading="lazy">

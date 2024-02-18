@@ -1,3 +1,22 @@
+var homeElement = document.querySelector('.home');
+var recipesElement = document.querySelector('.rec');
+var clipsElement = document.querySelector('.cli');
+
+function setActive(activeSection) {
+    if (activeSection === 'home') {
+        homeElement.classList.add('active');
+        recipesElement.classList.remove('active');
+        clipsElement.classList.remove('active');
+    } else if (activeSection === 'recipes') {
+        recipesElement.classList.add('active');
+        homeElement.classList.remove('active');
+        clipsElement.classList.remove('active');
+    } else if (activeSection === 'clips') {
+        clipsElement.classList.add('active');
+        recipesElement.classList.remove('active');
+        homeElement.classList.remove('active');
+    }
+}
 var dishList = document.querySelector('.recipe-dish-list');
 var mealList = document.querySelector('.recipe-meal-list');
 var dietList = document.querySelector('.recipe-diet-list');
