@@ -51,8 +51,6 @@ nav a {
     padding: 10px 20px 30px 20px;
     margin-top: -3px;
     margin-right: -10px;
-}
-.signup,.signup:hover {
     color: #fff;
 }                                                           /*home*/
 .md-up {
@@ -316,6 +314,14 @@ nav a {
     font-size: 30px;
     font-weight: 900;
     margin: 20px 0px 0px 30px;
+}
+.footer a {
+    text-decoration: none;
+    margin-left: -3px;
+    color: #fff;
+}
+.footer a:hover {
+    color: #EB4A36;
 }                                                 /* 0 - 407*/
 @media (min-width: 0px) and (max-width: 407px) {
     body {
@@ -405,8 +411,15 @@ nav a {
         max-width: 500px;
     }
 }
-/*                                                       0 - 991 */
+@media (min-width: 0px) and (max-width: 767px) {
+    .footer {
+        display: none;
+    }
+}                                                   /* 0 - 991 */
 @media (min-width: 0px) and (max-width: 991px) {
+    .div {
+        margin-top: -90px;
+    }
     .offcanvas-body {
         border: none;
         margin-top: 30px;
